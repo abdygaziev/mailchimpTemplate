@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<div class="mcnTextContent" style="background-color:#1b263b;">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mcnTextContent" style=" align-items:center;">
+        <header style="background-color:#1B263B;padding:20px">
+            <a href="#" style="text-decoration:none; font-family: 'Tangerine', cursive; color:white; font-size:38px"> <img src="https://mcusercontent.com/97e9e8786423961dfab1a4393/image18105ec5-cc19-415c-43e6-d5b7764b6276.png" style="width:5%;"> Aquaruim of the Pasific</a>
+            <a href="#" style="float:right;margin-top:20px; font-family: 'Tangerine', cursive; color:white; font-size:24px;">View in Browers</a>
+        </header>      
+    </div>
+  
+    <!-- Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+<div class="mcnTextContent" style="background-image:url('https://images.pexels.com/photos/4810676/pexels-photo-4810676.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');object-fit:cover;background-position: center;display:flex;flex-direction:column;background-size: cover;text-align:center;">
+<header style="height:56vh;margin-bottom:40px;">
+        
+    <h1 style="font-size: 45px; font-family: 'Tangerine', cursive;font-weight:bolder;color:white;margin-top:100px">Save the world by caring for<br> <span style="text-transform:uppercase;color:#E63946;font-family:'inherit'">blue penguin</span>.</h1>
+    
+    <h3 style="text-align:center; color:white; margin-top:170px;">Donate Amount </h3>
+    <div id="donationAmount" style="display:flex;flex-wrap: wrap; justify-content:space-evenly; margin-top:20px">
+      <input type="text" id="userInput" placeholder="Enter Your Name" style="padding:10px;border-radius:5px;font-weight:bold; color:white; background-color:#1D3557;">
+        <select id="amount" style="border-radius:5px;font-weight:bold;color:white;background-color:#1D3557;width:25%;text-align:center">
+        <option style="border-radius:40px">Select Amount</option>
+        <option style="border-radius:40px">$25</option>
+        <option style="border-radius:40px">$50</option>
+        <option style="border-radius:40px">$100</option>
+        </select>
+        
+        <button id="donateAmount" style="width:27%;font-weight:bold;color:white;background-color:#1D3557;padding:10px;border-radius:5px;" onclick="getUserInput()">Donate Now</button>
+        </div>
+        </header>
+        </div>
+        <script>
+        function getUserInput() {
+            let div = document.getElementById("donationAmount");
+            let out = document.getElementById('userInput').value;
+            let para = document.createElement('div');
+            let amount = document.getElementById("amount").value;
+            
+        
+            para.innerHTML = `${out} ${amount}`;
+            para.style.width="100%";
+            para.style.fontSize="26px";
+            para.style.fontWeight="bold";
+            para.style.color="#E63946"
+            para.style.fontFamily='inherit';
+            // para.style.color="white";
+            div.appendChild(para);
+            document.getElementById('userInput').value="";
+            }
+        </script>
+    <!-- SecondDiv -->
+    <div style="background-color:white;">
+        <h2 style="text-align:center;">What We Do?</h2>
+        <div class="section2" style="display: flex;background-color:white;">
+            <div style="width: 32%;text-align:center;padding:20px;"> 
+                <i style="color:#457B9D;font-size:50px;" class="fas fa-hand-holding-heart"></i>
+                <h3 style="font-size:20px;padding:10px;">Penguin Health</h3>
+                <p>Each year, around 90% of penguins brought into rehab will survive to be released, this is a very good success rate.</p>
+                <div style="width:60%;background-color:#1D3557;border-radius:5px;padding:10px;color:white;font-weight:bold;margin-left:10px;">Learn more</div>
+            </div>
+        <div style="width: 32%;text-align:center;padding:20px;">
+            <i style="color:#457B9D;font-size:50px;" class="fas fa-water"></i>
+            <h3 style="font-size:20px;padding:10px;">Nest box design</h3>
+            <p>Nest box design is critical and we have provided a design that aims to minimise the risk of predation by</p>
+            <div style="width:60%;background-color:#1D3557;border-radius:5px;padding:10px;font-weight:bold;color:white;margin-left:20px;">Learn more</div>
+        </div>
+            <div style="width: 32%;text-align:center;padding:20px;">
+                <i style="color:#457B9D;font-size:50px;" class="far fa-handshake"></i>
+                <h3 style="font-size:20px;padding:10px;">Birds we protect</h3>
+                <p>We are looking for a part-time ranger,predominantly working in the Buller. 20 hours pw on average.</p>
+                <div style="width:60%;background-color:#1D3557;border-radius:5px;padding:10px;font-weight:bold;color:white;margin-left:20px;">Learn more</div>
+            </div>   
+        </div>
+    </div>
+            <!-- ThirdBlock -->
+        <div class="mcnTextContent" style="background-color:#1D3557;">
+            <h3 style="color:#E63946;text-align:center;padding:20px;">Become a Sponsor? Call Us (+34) 777 333 222 </h3>
+        </div>
+            <div class="project" style="background-color:white;">
+                <div style="display:flex;width:100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR10nAr4lYkaZbCqhJ7uJtWsJHZklbJayV-3A&usqp=CAU" style="width:50%;margin:5px;margin-left:10px">
+                    <img src="https://sydneyaquariumblog.files.wordpress.com/2010/11/penguin_feeding_tim_oct2010.jpg" style="width:45%;margin:5px;">
+                </div>
+            <div class="text" style="display:flex;">
+                <div style="width:45%;margin:10px;text-align:center;"> 
+                    <h3 style="font-size:20px;line-height:1.1;text-align:center;">World Penguin Day & Every Day</h3>
+                    <p>Working to Save Penguins</p>
+                    <p style="text-align:left;">AZA- work not only for the penguins in their care, but also actively participate in efforts to help save them.</p>
+                    <div style="width:40%;background-color:#1D3557;color:white;padding:10px;border-radius:5px;font-weight:bold;margin-left:70px">Donate Now</div>
+                </div>
+                <div style="width:45%;margin:10px;text-align:center;"> 
+                    <h3 style="line-height:1.1;text-align:center;">SAFE</h3>
+                    <p style="margin-top:30px">Saving Animals From Extinction</p>
+                    <p style="text-align:left;">SAFE species are at risk of extinction & need our help.Saving penguins & protecting them for future generations.</p>
+                    <div style="width:40%;background-color:#1D3557;color:white;padding:10px;border-radius:5px;margin-left:70px;font-weight:bold;">Donate Now</div>
+                </div>
+            </div>
+        </div>
+         <!-- FourthBlock -->
+            <div class="mcnTextContent" style="background-image:url('https://www.visitsealife.com/sunshine-coast/media/ovaoq4pr/little-blue-pengins.jpg');background-repeat:no-repeat;background-size:cover;background-position:center;text-align:center;padding:40px;">
+                <div style="background-color:rgba(0,0,0,0.3);width:95%;margin:auto;padding:20px;">
+                    <h3 style="color:white;text-align:center;font-size:30px;text-transform:uppercase;">Our Volunteers</h3>
+                    <p style="color:white;line-height:1.2;text-indent:50px;">By volunteering on one of our field projects, you can make a practical contribution and help give the little penguin a Wild Future.
+                     </p>
+                    <div style="width:10%;color:#1b263b;background-color:white;padding:10px;margin-left:560px;border-radius:5px;font-weight:bold;">Apply Now</div>
+                </div>
+            </div>
+                <!-- Footer -->
+                    <div style="text-align:center;display:flex;flex-direction:column;margin-left:180px">
+                        <h3>Be a part of big changes!</h3>
+                        <h4 style="color:white;">#SAFEBLUEPINGUINS</h4>
+                    </div>
+                        <hr style="width:90%;border:2px solid yellow;">
+                        <div style="text-align:center;padding:10px">
+                        <i style="font-size:30px;margin:10px;" class="fab fa-facebook"></i>
+                        <i style="font-size:30px;margin:10px;" class="fab fa-instagram"></i>
+                        <i style="font-size:30px;margin:10px;" class="fab fa-twitter"></i>
+                        <i style="font-size:30px;margin:10px;" class="fab fa-linkedin"></i>
+                        </div>
+                    <!-- </div> -->
+                        <div style="display:flex;align-items:center;margin-left:75px;">
+                        <p style="text-align:center;width:90%;font-size:16px;">They're beautiful creatures, aren't they? We love penguins and we want them to be here for future generations to adore.</p>
+                        </div>
+                    <div class="contact" style="margin-left:95px;padding:20px;">
+                        <a href="#" style="font-size:17px;margin:5px;">Contact Us</a>
+                        <a href="#" style="font-size:17px;margin:5px;">Privacy & Policy</a>
+                        <a href="#" style="font-size:17px;margin:5px;">Unsubscribe</a>
+                    </div>
+
+                    
+                
+</body>
+</html>
